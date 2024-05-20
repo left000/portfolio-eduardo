@@ -10,8 +10,7 @@ export class ProfileComponent implements OnInit {
 
   @Input() persona!: Persona;
   
-  image: string = `https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-08/Pug1.jpg?h=1ece2f3c&itok=nJJsShQi`;
-  
+  image: string = '/assets/1679999446687.jpg'
   constructor() { }
 
   ngOnInit(): void {
