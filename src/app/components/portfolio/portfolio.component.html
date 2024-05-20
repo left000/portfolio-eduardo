@@ -1,0 +1,16 @@
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+            <div class="proyecto" *ngFor="let proyecto of persona.progetti">
+                <a [href]="proyecto.url" target="_blank">
+                    <img src="https://www.eclosio.ong/wp-content/uploads/2018/08/default.png" alt="">
+                    <div class="overlay">
+                        <h3>{{proyecto.nome}}</h3>
+                        <p>{{proyecto.descrizione}}</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

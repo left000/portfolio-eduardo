@@ -1,0 +1,32 @@
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Istruzione e Formazione</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3 style="text-align: center;" >Formazione</h3>
+                <div *ngFor="let istruzione of persona.istruzione" class="item izq">
+                    <span class="casa">{{istruzione.formazione}}</span>
+                    <span class="fecha">{{istruzione.data}}</span>
+                    <p>{{istruzione.descrizione}}</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col derecha">
+                <h3 style="text-align: center;" >Esperienze Lavorative </h3>
+                <div *ngFor="let esperienzeLavorative of persona.esperienzeLavorative" class="item der">
+                    <span class="casa">{{esperienzeLavorative.azienda}}</span>
+                    <span class="fecha">{{esperienzeLavorative.data}}</span>
+                    <div *ngFor="let descrizione of esperienzeLavorative.descrizione">
+                        <p>{{descrizione}}</p>
+                    </div>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

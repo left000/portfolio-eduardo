@@ -1,0 +1,24 @@
+<section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div *ngFor="let skills of persona.skills" class="fila">
+            <div class="col">
+                <h3>Hard Skills</h3>
+                <div class="container-hard-skills">
+                    <div *ngFor="let hardSkills of skills.hardSkills" class="skill">
+                        <i class="{{hardSkills.icona}}"></i>
+                        {{hardSkills.linguaggi}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Soft Skills</h3>
+                <div class="container-soft-skills">
+                    <div *ngFor="let softSkills of skills.softSkills" class="skill">
+                        <span>{{softSkills.competenze}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

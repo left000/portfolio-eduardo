@@ -1,0 +1,8 @@
+<footer>
+    <a href="#home" class="home">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div *ngFor="let socials of persona.socials" class="redes">
+        <a target="_blank" href="{{socials.link}}"><i class="{{socials.icona}}"></i></a>
+    </div>
+</footer>

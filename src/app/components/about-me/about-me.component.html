@@ -1,0 +1,54 @@
+<section id="aboutMe" class="aboutMe">
+    <div class="content-seccion">
+        <h2>About Me</h2>
+        <p>
+            <span> Sono {{persona.anagrafica?.nome}} {{persona.anagrafica?.cognome}}</span>
+            {{persona.descrizione}}
+        </p>
+        <div class="fila">
+            <div class="col">
+                <h3>Dati Personali</h3>
+                <ul>
+                    <li>
+                        <strong>Data di Nascita</strong> {{persona.anagrafica?.dataDiNascita}}
+                    </li>
+                    <li>
+                        <strong>Telefono</strong> {{persona.contatti?.telf}}
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        {{persona.contatti?.email}}
+                    </li>
+                    <li>
+                        <strong>Indirizzo</strong>
+                        {{persona.anagrafica?.indirizzo}}
+                    </li>
+                    <li class="lingue">
+                        <strong>Lingue</strong>
+                        <div>
+                            <div class="lingue-div" *ngFor="let lingue of persona.lingue">
+                                {{lingue.lingua}}
+                                {{lingue.level}}
+                                {{lingue.flag}}
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h3>Hobbies</h3>
+                <div class="contenedor-intereses">
+                    <div *ngFor="let hobbies of persona.hobbies" class="interes">
+                        <i class="{{hobbies.icona}}"></i>
+                        {{hobbies.descrizione}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button (click)="downloadPdf()">
+            Scarica CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+        </button>
+    </div>
+</section>
