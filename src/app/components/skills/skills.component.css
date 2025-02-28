@@ -75,22 +75,24 @@
 
 .skills .container-soft-skills .skill {
     width: 100%; 
-    background-color: #1CB698; 
+    /* background-color: #1CB698;  */
     border-radius: 10px;
     padding: 10px 20px;
     margin-bottom: 15px;
-    text-align: center;
+    font-size: 25px;
+    text-align: start;
     transition: .3s;
 }
 
 .skills .container-soft-skills .skill:hover {
     background-color: #1e2326; /* Cambiato colore di sfondo al passaggio del mouse */
 }
-
+    
 
 @media (max-width: 768px) {
     .skills .container-soft-skills .skill {
         width: 100%; 
+        text-align: center;
     }
 }
 

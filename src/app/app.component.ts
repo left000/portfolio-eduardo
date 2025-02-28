@@ -12,7 +12,7 @@ export class AppComponent {
     anagrafica: {
       nome: 'Lorenzo Eduardo',
       cognome: 'Furio',
-      indirizzo: 'Via isonzo n 11',
+      indirizzo: 'BA, Molfetta - Via isonzo n 11',
       dataDiNascita: '29-12-1998',
       nazionalita: [{
         nazionalita: 'Italiano'
@@ -69,12 +69,15 @@ export class AppComponent {
         hardSkills: [
           { linguaggi: 'JavaScript', icona: 'fa-brands fa-js' },
           { linguaggi: 'Java', icona: 'fa-brands fa-java' },
+          { linguaggi: 'Java EE', icona: 'fa-brands fa-java' },
           { linguaggi: 'Spring Boot', icona: '' },
+          { linguaggi: 'JavaScript', icona: 'fab fa-js' },
           { linguaggi: 'Angular', icona: 'fa-brands fa-angular' },
           { linguaggi: 'Docker', icona: 'fa-brands fa-docker' },
           { linguaggi: 'HTML', icona: 'fa-brands fa-html5' },
           { linguaggi: 'CSS', icona: 'fa-brands fa-css3-alt' },
           { linguaggi: 'Git', icona: 'fa-brands fa-git-alt' },
+          { linguaggi: 'GitHub', icona: 'fab fa-github' },
           { linguaggi: 'SQL', icona: 'fa-solid fa-database' },
           { linguaggi: 'Jasmine', icona: '' },
           { linguaggi: 'PHP', icona: 'fa-brands fa-php' },
@@ -84,7 +87,19 @@ export class AppComponent {
     ],
     istruzione: [
       {
-        formazione: 'Corso UMANA - JAVA DEVELOPER ',
+        formazione: 'Corso ItConsulting - JAVA AVANZATO & SQL',
+        data: 'Gennaio 2025 - Marzo 2025',
+        titolo: 'Attestato Java & SQL',
+        descrizione: 'Java Avanzato, Design Pattern, SQL, Spring boot'
+      },
+      {
+        formazione: 'UNIVERSITÀ DEGLI STUDI DI BARI',
+        data: 'Novembre 2024 - In corso',
+        titolo: 'Certificato Java Junior Developer',
+        descrizione: 'Percoso di studi in corso'
+      },
+      {
+        formazione: 'Corso UMANA - JAVA DEVELOPER',
         data: 'Settembre 2023 - Novembre 2023',
         titolo: 'Certificato Java Junior Developer',
         descrizione: 'Java Base, Spring Boot, Angular'
@@ -110,8 +125,27 @@ export class AppComponent {
     ],
     esperienzeLavorative: [
       {
+        azienda: 'MASVIS - Sviluppo FrontEnd',
+        data: 'Ottobre 2024 - Gennaio 2025',
+        descrizione: [
+          'Sviluppo e manutenzione di applicazioni web responsive utilizzando Angular e JavaScript',
+          `Implementazione di componenti riutilizzabili seguendo i principi di Design System`,
+        ]
+      },
+      {
+        azienda: 'Auriga - Bug fix Delivery Server',
+        data: 'Giugno 2024 - Ottobre 2024',
+        descrizione: [
+          'Gestione e risoluzione di ticket provenienti da vari istituti di credito, con attività di bug fixing su sistemi ATM basati su Java EE e EJB.',
+          `Gestione e implementazione di patch e aggiornamenti tramite TFS e Git,lavorando su pull request per garantire un'integrazione fluida delle modifiche.`,
+          'Collaborazione con il team per la gestione di changelog e la tracciabilità dellemodifiche.',
+          `Configurazione e deployment delle applicazioni su WebSphere Application Server.`,
+          'Analisi e ottimizzazione delle query SQL'
+        ]
+      },
+      {
         azienda: 'Almaviva Digitaltec',
-        data: 'Novembre 2023 - in corso',
+        data: 'Novembre 2023 -  Maggio 2024',
         descrizione: [
           'Sviluppo e integrazione di componenti UI per applicazioni web utilizzando Angular.',
           `Gestione delle chiamate API REST per l'ottenimento e la visualizzazione di dati dinamici`,
